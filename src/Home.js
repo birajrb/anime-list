@@ -3,7 +3,7 @@ import useFakeFetch from "./useFakeFetch";
 
 const Home = () => {
   const { data: blog, isLoading, error } = useFakeFetch(
-    "http://localhost:8000/blogs"
+    "http://localhost:8000/anime-list"
   );
   return (
     <div className="home">

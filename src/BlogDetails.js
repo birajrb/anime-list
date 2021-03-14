@@ -4,7 +4,7 @@ import useFakeFetch from "./useFakeFetch";
 const BlogDetails = () => {
   const { id } = useParams();
   const { data: blog, isLoading, error } = useFakeFetch(
-    "http://localhost:8000/blogs/" + id
+    "http://localhost:8000/anime-list/" + id
   );
   return (
     <div className="blog-details">
