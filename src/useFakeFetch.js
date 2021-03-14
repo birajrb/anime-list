@@ -4,8 +4,8 @@ const useFakeFetch = (url) => {
   if (url === "http://localhost:8000/anime-list")
     return { data: fakeData, isLoading: false, error: null };
 
-  if (url.startsWith("http://localhost:8000/anime-list/")) {
-    const blogId = url.slice(33);
+  if (url.startsWith("http://localhost:8000/anime-list/anime-list/")) {
+    const blogId = url.slice(44);
     const blog = fakeData.find((b) => b.id.toString() === blogId);
     if (blog === undefined) {
       return { data: null, isLoading: false, error: "Not found" };

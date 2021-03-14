@@ -18,7 +18,7 @@ function App() {
             <Route path="/anime-list/about">
               <About />
             </Route>
-            <Route path="/anime-list/:id">
+            <Route path="/anime-list/anime-list/:id">
               <BlogDetails />
             </Route>
             <Route path="*">
