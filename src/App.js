@@ -3,6 +3,7 @@ import About from "./About";
 import BlogDetails from "./BlogDetails";
 import Home from "./Home";
 import Navbar from "./Navbar";
+import NotFound from "./NotFound";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
             </Route>
             <Route path="/anime-list/:id">
               <BlogDetails />
+            </Route>
+            <Route path="*">
+              <NotFound />
             </Route>
           </Switch>
         </div>
