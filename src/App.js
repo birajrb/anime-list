@@ -10,7 +10,7 @@ function App() {
         <Navbar />
         <div className="content">
           <Switch>
-            <Route exact path="/anime-list">
+            <Route exact path="/anime-list/">
               <Home />
             </Route>
             <Route path="/about">
